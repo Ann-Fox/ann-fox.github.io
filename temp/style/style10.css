@@ -42,9 +42,10 @@ p {
 .img li {
   list-style-type: none;
   /* background-color: rgb(225, 233, 108); */
-  /* margin: 10px; */
   width: 25%;
   padding: 29px;
+  /* margin: 5px; */
+  box-shadow: 5px 2px 5px rgb(51, 199, 46) inset;
 }
 
 .img li > div {
