@@ -1,0 +1,90 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section {
+  background-color: rgb(224, 14, 14);
+  width: 100%;
+  max-width: 300px;
+  /* flex: 1 0 auto; */
+  height: 200px;
+  padding: 10px 20px;
+  margin: 40px;
+  /* box-sizing: border-box; */
+}
+
+.blue {
+  border-top: 15px solid blue;
+  border-bottom: 20px solid rgb(43, 226, 195);
+  background: linear-gradient(
+    50deg,
+    #1cedab,
+    #84faa8,
+    #35e026,
+    #94f71e,
+    #eded1c
+  );
+  box-shadow: inset 10px 12px 12px 5px rgba(62, 75, 64, 0.5);
+}
+
+.blue:hover {
+  box-shadow: 10px 12px 12px 5px rgba(62, 75, 64, 0.5);
+}
+
+.red {
+  border-top: 15px solid rgb(255, 0, 212);
+  border-bottom: 20px dashed rgb(231, 26, 197);
+  background: linear-gradient(
+    to bottom,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  box-shadow: -10px -12px 18px 9px rgba(236, 46, 12, 0.7);
+}
+
+.red:hover {
+  box-shadow: inset 15px 22px 22px 29px rgba(235, 41, 16, 0.8);
+}
+
+.green {
+  border-top: 15px double rgb(63, 230, 30);
+  border-bottom: 15px dotted green;
+  background: greenyellow;
+  box-shadow: -20px -20px 20px 20px rgba(18, 241, 47, 0.7);
+}
+
+.green:hover {
+  box-shadow: inset 10px 10px 0px 30px rgba(18, 241, 47, 0.7);
+  background: rgb(224, 255, 47);
+}
+
+/* Text */
+.text {
+  background: rgb(23, 223, 23);
+  padding: 10px;
+  margin-top: 50px;
+
+  transition: all 0.2s linear, background 0.2s linear;
+}
+
+.text:hover {
+  opacity: 0.5;
+  background: #e5f50c;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: rgb(231, 91, 26);
+  font-size: 30px;
+  font-style: oblique;
+  text-decoration: underline rgb(219, 34, 43);
+  text-shadow: 1px 4px 1px #000;
+  text-align: end;
+}
