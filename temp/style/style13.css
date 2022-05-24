@@ -1,0 +1,63 @@
+body {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(12, 6, 24);
+  background-color: rgb(36, 248, 100);
+}
+
+ol > li:nth-child(3) {
+  font-size: 1.25em;
+}
+
+ol > li:first-child {
+  color: blue;
+}
+
+ol > li:last-child {
+  color: rgb(226, 43, 43);
+}
+
+ul li:last-child {
+  color: rgb(5, 15, 104);
+  background: linear-gradient(
+    90deg,
+    rgb(97, 230, 240) 0%,
+    rgb(221, 73, 73) 50%,
+    rgb(191, 238, 19) 100%
+  );
+}
+
+ul li:last-child:hover {
+  color: rgb(5, 17, 1);
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  box-shadow: 2px 2px 25px rgb(84, 252, 17), 2px 2px 75px rgb(10, 2, 24);
+}
+
+ol > li::before {
+  content: "+";
+  color: rgb(0, 218, 73);
+  font-size: 25px;
+  background-color: #fff;
+  padding: 2px;
+}
+
+.media {
+  background-color: aqua;
+  width: 80%;
+  margin: 0;
+}
+
+@media (min-widht: 768px) {
+  h1 {
+    width: 30%;
+  }
+  .media {
+    width: 70%;
+  }
+}
