@@ -59,6 +59,31 @@ img {
   width: 100px;
   border-radius: 50px;
   margin: 20px;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 1);
   /* animation: 2s ease-in 1s 2 reverse both paused fadeIn; */
+
+  animation-name: moveX, bgChange;
+  animation-duration: 4s, 2s;
+  animation-fill-mode: both, forwards;
+  animation-delay: 2s;
+}
+@keyframes moveX {
+  from {
+    transform: translateX(0);
+    /* box-shadow: 2px 2px 5px 5px rgb(216, 33, 33); */
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes bgChange {
+  from {
+    background: red;
+    box-shadow: -5px 5px 15px -5px rgb(18, 19, 18);
+  }
+  to {
+    background: green;
+    box-shadow: 5px -5px 15px -25px rgb(199, 69, 18);
+  }
 }
