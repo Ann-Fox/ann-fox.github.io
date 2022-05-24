@@ -17,3 +17,48 @@ p {
 }
 
 /* Transform img */
+
+.section__transform {
+  background: blueviolet;
+}
+
+img {
+  transform: translate3d(50px, 10px, 0);
+  margin: 30px;
+}
+
+.animation {
+  width: 700px;
+  height: 300px;
+  background-color: #d62e2e;
+
+  animation: 2s bgAnim, 2s fadeOut 2s;
+}
+
+@keyframes bgAnim {
+  to {
+    background-color: #333;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0.2;
+    width: 300px;
+    background-color: rgb(233, 219, 25);
+  }
+}
+
+.radius {
+  background-color: aquamarine;
+}
+
+.radius div {
+  background: red;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: 20px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  /* animation: 2s ease-in 1s 2 reverse both paused fadeIn; */
+}
