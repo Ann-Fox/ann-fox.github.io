@@ -1,55 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style14.css">
-  <title>Domashka 14</title>
-</head>
-<body>
-  <header>
-    <h1>Domashka 14</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style14.css" />
+    <title>Domashka 14</title>
+  </head>
+  <body>
+    <header>
+      <h1>Domashka 14</h1>
+    </header>
 
-  <main>
-<section class="section1">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, exercitationem fuga numquam sed quis dolorem, sequi sapiente nobis, cum amet vitae? Tempora corporis praesentium minima autem modi beatae qui error.</p>
-</section>
+    <main>
+      <section class="section1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+          exercitationem fuga numquam sed quis dolorem, sequi sapiente nobis,
+          cum amet vitae? Tempora corporis praesentium minima autem modi beatae
+          qui error.
+        </p>
+      </section>
 
-<section class="section2">
-  <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum ut debitis provident dignissimos eveniet id laudantium, odio tempora, iure nesciunt repellendus autem velit in doloribus ab laboriosam nostrum pariatur.</p>
-  </div>
-</section>
+      <section class="section2">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            ipsum ut debitis provident dignissimos eveniet id laudantium, odio
+            tempora, iure nesciunt repellendus autem velit in doloribus ab
+            laboriosam nostrum pariatur.
+          </p>
+        </div>
+      </section>
 
-<section class="section-form">
-  <form action="/my-handling-form-page" method="post">
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name">
-    </div>
-  
-    <div>
-      <label for="mail">E-mail:</label>
-      <input type="email" id="mail" name="user_email">
-    </div>
-  
-    <div>
-      <label for="msg">Message:</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </div>
-  
-    <div class="button">
-      <button type="submit">Send your message</button>
-    </div>
-  </form>
-</section>
-  </main>
+      <section class="section-form">
+        <form action="my-form" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" placeholder="Ivan" />
+          </div>
 
-  <footer>
+          <div>
+            <label for="surname">Surname:</label>
+            <input
+              type="text"
+              id="name"
+              name="user_surname"
+              placeholder="Ivanov"
+            />
+          </div>
 
-  </footer>
-  
-</body>
+          <div>
+            <label for="mail">E-mail:</label>
+            <input
+              type="email"
+              id="mail"
+              name="user_email"
+              placeholder="Ivanov@mail.ru"
+            />
+          </div>
+
+          <div>
+            <label for="msg">Message:</label>
+            <textarea
+              id="msg"
+              name="user_message"
+              placeholder="Your messege"
+            ></textarea>
+          </div>
+
+          <div>
+            <h4>
+              Your gender: Почему-то можно выбрать все варианты, что-то пошло не
+              так)))
+            </h4>
+            <label for="man">
+              man
+              <input type="radio" id="man" name="man" value="" />
+            </label>
+            <label for="woman">
+              woman
+              <input type="radio" id="woman" name="woman" value="" />
+            </label>
+            <label for="no-gender">
+              no gender
+              <input type="radio" id="no-gender" name="no-gender" value="" />
+            </label>
+          </div>
+
+          <label class="country" for="country">
+            <h4>Your country:</h4>
+          </label>
+          <select name="country" id="country">
+            <option value="russia">Russia</option>
+            <option value="latvia">Latvia</option>
+          </select>
+
+          <div>
+            <h4>Convenient way to contact you</h4>
+            <label for="scales1">
+              E-mail
+              <input type="checkbox" id="scales1" name="check-mail" />
+            </label>
+            <label for="scales2">
+              Telephon
+              <input type="checkbox" id="scales2" name="check-phone" />
+            </label>
+            <label for="scales2">
+              SMS
+              <input type="checkbox" id="scales2" name="check-phone" />
+            </label>
+          </div>
+
+          <div class="button">
+            <button type="submit">Send your message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span> web-developer Ann Chernysheva</span>
+    </footer>
+  </body>
 </html>
