@@ -52,7 +52,14 @@ form {
   background: var(--color-backraund);
 }
 
-div + div {
+fieldset {
+  border: none;
+  /* box-shadow: var(--shadow-value); */
+  background: var(--gradient-background);
+}
+
+div + div,
+fieldset {
   margin-top: 1em;
 }
 
@@ -98,6 +105,8 @@ textarea {
 }
 
 button {
+  margin-top: 0.5em;
+
   margin-left: 0.5em;
   /* box-shadow: var(--shadow-value); */
 }

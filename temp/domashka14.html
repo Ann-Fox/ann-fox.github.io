@@ -69,34 +69,36 @@
             ></textarea>
           </div>
 
-          <div>
+<fieldset>
             <h4>
-              Your gender: Почему-то можно выбрать все варианты, что-то пошло не
-              так)))
+              Your gender:
             </h4>
             <label for="man">
               man
-              <input type="radio" id="man" name="man" value="" />
+              <input type="radio" id="man" name="gender" value="" />
             </label>
             <label for="woman">
               woman
-              <input type="radio" id="woman" name="woman" value="" />
+              <input type="radio" id="woman" name="gender" value="" />
             </label>
             <label for="no-gender">
               no gender
-              <input type="radio" id="no-gender" name="no-gender" value="" />
+              <input type="radio" id="no-gender" name="gender" value="" />
             </label>
-          </div>
+     </fieldset>
 
-          <label class="country" for="country">
+         <fieldset>
+              <label class="country" for="country">
             <h4>Your country:</h4>
           </label>
           <select name="country" id="country">
             <option value="russia">Russia</option>
             <option value="latvia">Latvia</option>
           </select>
+         </fieldset>
+       
+<fieldset>
 
-          <div>
             <h4>Convenient way to contact you</h4>
             <label for="scales1">
               E-mail
@@ -110,7 +112,9 @@
               SMS
               <input type="checkbox" id="scales2" name="check-phone" />
             </label>
-          </div>
+         
+</fieldset>
+         
 
           <div class="button">
             <button type="submit">Send your message</button>
