@@ -1,0 +1,1 @@
+const coord = document.getElementById('coordinat');
