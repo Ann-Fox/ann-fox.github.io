@@ -8,23 +8,30 @@
     <title>Denis Novak</title>
   </head>
   <body>
-    <!-- <header>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Portfolio</li>
-        <li>Contacts</li>
-      </ul>
-    </nav>
-  </header> -->
+    <header>
+      <nav class="nav show" id="nav">
+        <button class="nav__close" id="navClose"></button>
+
+        <div class="nav__lang">
+          <a class="nav__link" href="#">ru</a>
+          <a href="#">eng</a>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item active"><a href="#home">Home</a></li>
+          <li class="nav__item"><a href="#about">About me</a></li>
+          <li class="nav__item"><a class="#skills">Skills</a></li>
+          <li class="nav__item"><a class="#portfolio">Portfolio</a></li>
+          <li class="nav__item"><a href="#footer">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <!--Denis Novak-->
       <section class="denis">
         <h1>Denis<br />Novik</h1>
-        <div class="burger">
+        <div class="burger" id="navOpen">
           <img src="images/burger.svg" alt="" />
         </div>
       </section>
@@ -42,134 +49,132 @@
       </section>
 
       <!--About me-->
-      <section class="about">
+      <section class="about" id="about">
         <h2>About me</h2>
-          <p>
-            Hi, I&#39;m Denis – UX&#47;UI designer from Minsk. I&#39;m
-            interested in design and everything connected with it.
-          </p>
-          <p>
-            I&#39;m studying at courses "Web and mobile design interfaces" in
-            IT-Academy.
-          </p>
-          <p>Ready to implement excellent projects with wonderful people.</p>
+        <p>
+          Hi, I&#39;m Denis – UX&#47;UI designer from Minsk. I&#39;m interested
+          in design and everything connected with it.
+        </p>
+        <p> I&#39;m studying at courses<br>"Web and mobile design interfaces" in
+          IT-Academy.
+        </p>
+        <p>Ready to implement excellent projects with wonderful people.</p>
       </section>
 
       <!--Skills-->
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2>Skills</h2>
         <p>I work in such programs as</p>
 
         <div class="skills__conteiner">
-        <div class="skills__item">
-          <img src="images/i-ps.jpg" alt="" />
-          <h6>Adobe<br>Photoshop</h6>
-         <span>
-           <span class="star__active"></span>
-           <span class="star__active"></span>
-           <span class="star__active"></span>
-           <span class="star__active"></span>
-           <span class="star"></span>
-         </span>
-        </div>
+          <div class="skills__item">
+            <img src="images/i-ps.jpg" alt="" />
+            <h6>Adobe<br />Photoshop</h6>
+            <span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star"></span>
+            </span>
+          </div>
 
-        <div class="skills__item">
-          <img src="images/i-ai.jpg" alt="" />
-          <h6>Adobe<br>Illustrator</h6>
-          
-          <span>
-            <span class="star__active"></span>
-            <span class="star__active"></span>
-            <span class=" star__active"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-          </span>
-        </div>
+          <div class="skills__item">
+            <img src="images/i-ai.jpg" alt="" />
+            <h6>Adobe<br />Illustrator</h6>
 
-        <div class="skills__item">
-          <img src="images/adobe-after.jpg" alt="" />
-          <h6>Adobe<br>After Effects</h6>
-         <span>
-            <span class="star__active"></span>
-            <span class="star__active"></span>
-            <span class="star__active"></span>
-            <span class="star__active"></span>
-            <span class="star"></span>
-          </span>
-        </div>
+            <span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </span>
+          </div>
 
-        <div class="skills__item">
-          <img src="images/figma-frame.png" alt="" />
-          <h6>Figma</h6>
-     
-          <span>
-            <span class="star__active"></span>
-            <span class="star__active"></span>
-            <span class="star__active"></span>
-            <span class="star__active"></span>
-            <span class="star"></span>
-          </span>
+          <div class="skills__item">
+            <img src="images/adobe-after.jpg" alt="" />
+            <h6>Adobe<br />After Effects</h6>
+            <span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star"></span>
+            </span>
+          </div>
+
+          <div class="skills__item">
+            <img src="images/figma-frame.png" alt="" />
+            <h6>Figma</h6>
+
+            <span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star__active"></span>
+              <span class="star"></span>
+            </span>
+          </div>
         </div>
-      </div>
       </section>
 
       <!--Portfolio-->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio__conteiner">
+          <h2>Portfolio</h2>
 
-          <div class="portfolio__conteiner">
-        <h2>Portfolio</h2>
-      
-        <div class="portfolio__list">
-        <div>
-          <img src="images/online-fashion-store-375.jpg" alt="" />
-          <a href="https://polinabenefit.com">Online fashion store - Homepage</a>
-        </div>
+          <div class="portfolio__list">
+            <div>
+              <img src="images/online-fashion-store-375.jpg" alt="" />
+              <a href="https://polinabenefit.com"
+                >Online fashion store - Homepage</a
+              >
+            </div>
 
-        <div>
-          <img src="images/reebok_web-375.jpg" alt="" />
-          <a href="https://welcomeperm.com/">Reebok Store - Concept</a>
-        </div>
+            <div>
+              <img src="images/reebok_web-375.jpg" alt="" />
+              <a href="https://welcomeperm.com/">Reebok Store - Concept</a>
+            </div>
 
-        <div>
-          <img
-            src="images/braun-landing-page.jpg" 
-            alt=""
-          />
-          <a href="https://rossma.ru">Braun Landing Page - Concept</a>
+            <div>
+              <img src="images/braun-landing-page.jpg" alt="" />
+              <a href="https://rossma.ru">Braun Landing Page - Concept</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
       </section>
-
     </main>
 
-    <footer>
-<section class="conteiner">
-      <h2>Contacts</h2>
-      <p>
-        Want to know more or just chat?<br>
-        You are welcome!
-      </p>
-      <button>Send message</button>
-<div class="footer__sotial">
-      <a href="">
-        <img src="images/linkedIn.png" alt="" />
-      </a>
-      <a href="">
-        <img src="images/instagram.png" alt="" />
-      </a>
-      <a href="">
-        <img src="images/behance.png" alt="" />
-      </a>
-      <a href="">
-        <img src="images/dribble.png" alt="" />
-      </a>
-    </div>
-      <p class="like-me">
-        Like me on<br>
-        LinkedIn, Instagram, Behance, Dribble
-      </p>
-    </section>
+    <footer class="footer" id="footer">
+      <section class="conteiner">
+        <h2>Contacts</h2>
+        <p>
+          Want to know more or just chat?<br />
+          You are welcome!
+        </p>
+        <button>Send message</button>
+        <div class="footer__sotial">
+          <a href="">
+            <img src="images/linkedIn.png" alt="" />
+          </a>
+          <a href="">
+            <img src="images/instagram.png" alt="" />
+          </a>
+          <a href="">
+            <img src="images/behance.png" alt="" />
+          </a>
+          <a href="">
+            <img src="images/dribble.png" alt="" />
+          </a>
+        </div>
+        <p class="like-me">
+          Like me on<br />
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </section>
     </footer>
+
+    <script src="script/script.js"></script>
   </body>
 </html>
