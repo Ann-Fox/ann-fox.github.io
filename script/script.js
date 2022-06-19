@@ -21,7 +21,7 @@ function closeNav () {
 window.addEventListener('load', () => {
     const navItems = Array.from(document
         .querySelectorAll('.nav__item a'));
-        .querySelectorAll('.nav__item a'); // Выбираем все ссылки и сразу перкладываем в массив
+        // .querySelectorAll('.nav__item a'); // Выбираем все ссылки и сразу перкладываем в массив
 
     navItems.forEach(function (i) {
         i.addEventListener('click', closeNav);
@@ -29,15 +29,15 @@ window.addEventListener('load', () => {
         navItem.addEventListener('click', closeNav); // Вешаем обработчик на каждый элемент списка в отдельности
     });
 
-    document
+      document
         .getElementById('navOpen')
         .addEventListener('click', toggleNav);
-        .getElementById('navOpen') // получаем кнопку открыт навигацию
-        .addEventListener('click', toggleNav); // вешаем на кнопку обработчик клика - вызываем функцию toggleNav
+        // .getElementById('navOpen') // получаем кнопку открыт навигацию
+        // .addEventListener('click', toggleNav); // вешаем на кнопку обработчик клика - вызываем функцию toggleNav
 
     document
         .getElementById('navClose')
         .addEventListener('click', toggleNav);
-        .getElementById('navClose') // получаем кнопку закрыть навигацию
-        .addEventListener('click', toggleNav); // вешаем на кнопку обработчик клика - вызываем функцию toggleNav
+        // .getElementById('navClose') // получаем кнопку закрыть навигацию
+        // .addEventListener('click', toggleNav); // вешаем на кнопку обработчик клика - вызываем функцию toggleNav
 }); 
