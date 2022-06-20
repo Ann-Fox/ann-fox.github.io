@@ -32,7 +32,7 @@ h2 {
 }
 
 /* Header */
-.vav .show {
+.nav.show {
   transform: translateX(0);
 }
 
@@ -47,16 +47,22 @@ h2 {
   overflow-y: auto;
   background-color: var(--color-font-light);
   transform: translateX(-100%);
-  transition: all 0.7s var(--tf);
+  transition: all 0.9s var(--tf);
 }
 
 .nav__close {
   display: block;
   position: absolute;
   top: 66px;
-  right: 27px;
+  right: 37px;
   width: 22px;
   height: 22px;
+
+  background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__close::before {
@@ -90,6 +96,88 @@ h2 {
   background-color: var(--color-font-secondary);
 }
 
+.nav__lang {
+  font-family: var(--font-primary);
+  display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(27px, -112px) rotate(90deg);
+}
+
+.nav__link:first-child {
+  padding-right: 26px;
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  color: var(--color-font-secondary);
+  text-transform: uppercase;
+}
+
+.nav__link:first-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: var(--color-font-primary-mobile);
+  top: 8px;
+  left: 54px;
+}
+
+.nav__link.active {
+  color: var(--color-font-primary-mobile);
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  color: var(--color-font-secondary);
+  text-transform: uppercase;
+}
+
+.nav__list {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 17px 68px;
+}
+
+.nav__item:first-child {
+  margin-top: 44px;
+}
+.nav__item {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-top: 49px;
+}
+
+.nav__item.active a {
+  color: var(--color-font-primary);
+  cursor: default;
+  pointer-events: none;
+}
+.nav__item a {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  color: var(--color-font-secondary);
+  cursor: pointer;
+  transition: color .2s linear;
+  text-decoration: none;
+}
+
+.nav__item a:hover {
+  color: #000000;
+}
 /* header {
   font-family: "Gilroy";
   font-size: 18px;
@@ -140,6 +228,7 @@ h1:hover {
 .burger {
   width: 33px;
   margin-right: 22px;
+  cursor: pointer;
 }
 
 .ux {
