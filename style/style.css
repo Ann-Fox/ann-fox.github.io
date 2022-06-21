@@ -1,25 +1,37 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url("../fonts/Gilroy-Regular.eot");
-  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-src: url("../fonts/Gilroy-Bold.eot");
-src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
-font-weight: bold;
-font-style: normal;
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-src: url("../fonts/Gilroy-Medium.eot");
-src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
-font-weight: 500;
-font-style: normal;
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 :root {
@@ -71,11 +83,11 @@ h2 {
 
 @media (min-width: 768px) {
   .nav {
-      display: flex;
-      position: relative;
-      width: 100%;
-      height: auto;
-      transform: none !important;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
   }
 }
 
@@ -88,10 +100,10 @@ h2 {
   height: 22px;
 
   background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__close::before {
@@ -128,22 +140,22 @@ h2 {
 
 @media (min-width: 768px) {
   .nav__close {
-      display: none;
+    display: none;
   }
 }
 
 .nav__lang {
   font-family: var(--font-primary);
   display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translate(27px, -112px) rotate(90deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(27px, -112px) rotate(90deg);
 }
 
 @media (min-width: 768px) {
   .nav__lang {
-      display: none;
+    display: none;
   }
 }
 
@@ -152,7 +164,7 @@ h2 {
 }
 
 .nav__link:first-child::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 4px;
@@ -186,13 +198,13 @@ h2 {
 
 @media (min-width: 768px) {
   .nav__list {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: 88px;
-      border-bottom: 1px solid var(--color-font-secondary);
-      padding: 0 30px 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid var(--color-font-secondary);
+    padding: 0 0 8px;
   }
 }
 
@@ -209,7 +221,7 @@ h2 {
 
 @media (min-width: 768px) {
   .nav__item {
-      margin-top: 0 !important;
+    margin-top: 0 !important;
   }
 }
 
@@ -225,13 +237,14 @@ h2 {
   line-height: 42px;
   color: var(--color-font-secondary);
   cursor: pointer;
-  transition: color .2s linear;
+  transition: color 0.2s linear;
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
   .nav__item a {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 22px;
     cursor: pointer;
   }
 }
@@ -252,18 +265,18 @@ h2 {
   }
 }
 
-  .bunner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-        /* width: 380px; */
-  }
+.bunner {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* width: 380px; */
+}
 
-  @media (min-width: 768px) {
-    .bunner {
-        display: flex;
-    }
+@media (min-width: 768px) {
+  .bunner {
+    display: flex;
   }
+}
 
 .denis {
   display: flex;
@@ -280,7 +293,6 @@ h1 {
   margin: 0;
   margin-top: -12.5px;
   margin-left: 18px;
-  border-radius: nullpx;
 }
 
 h1:hover {
@@ -299,7 +311,7 @@ h1:hover {
 
 @media (min-width: 768px) {
   .burger {
-      display: none;
+    display: none;
   }
 }
 
@@ -318,11 +330,13 @@ h1:hover {
 @media (min-width: 768px) {
   .lang_bunner {
     display: flex;
-    transform: translate(27px, -112px) rotate(270deg);
+    /* transform: translate(27px, -112px) rotate(270deg); */
+    /* position: relative; */
+    transform: translate(23px, -35px) rotate(-90deg);
   }
 
-.lang_bunner a {
-  font-family: var(--font-primary);
+  .lang_bunner a {
+    font-family: var(--font-primary);
     font-weight: 700;
     font-size: 34px;
     line-height: 42px;
@@ -343,7 +357,7 @@ h1:hover {
 
 @media (min-width: 768px) {
   .den-img img:first-child {
-      display: none;
+    display: none;
   }
 }
 
@@ -353,9 +367,9 @@ h1:hover {
 
 @media (min-width: 768px) {
   .den-img img:last-child {
-      display: block;
-      width: 100%;
-      height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -365,11 +379,11 @@ h1:hover {
   background: #f6f6f6;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .about {
     padding-top: 113px;
     padding-bottom: 109px;
-}
+  }
 }
 
 .about h2 {
@@ -386,11 +400,11 @@ h1:hover {
   margin-bottom: 42.94px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .about p {
     max-width: 500px;
     margin: 0 auto 45px;
-}
+  }
 }
 
 /* Skills */
@@ -425,7 +439,7 @@ h1:hover {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-}
+  }
 }
 
 .skills__item {
@@ -598,10 +612,10 @@ button {
   font-family: var(--font-primary);
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   button {
     width: 200px;
-}
+  }
 }
 
 .footer__sotial {
@@ -628,11 +642,30 @@ button {
   font-weight: 500;
 }
 
-
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   header {
     padding: 0;
-    width: 941px;}
-    /* align-items: center; */
+    width: 940px;
+    margin: 0 auto;
+  }
 
+  .conteiner_bunner {
+    width: 940px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .skills__conteiner {
+    width: 940px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .skills__item {
+    margin: 0 27px;
+  }
+
+  .denis {
+      margin-top: 24px;
+  }
+  
 }
