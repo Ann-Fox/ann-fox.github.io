@@ -258,15 +258,15 @@ h2 {
     align-items: flex-end;
         /* width: 380px; */
   }
-
+/* 
   .nav__lang {
       display: flex;
       transform: translate(200px, -300px) rotate(270deg);
-      /* position: fixed; */
+     
       top: 50%;
       right: 0;
       z-index: 1;
-}
+} */
 
 .denis {
   display: flex;
