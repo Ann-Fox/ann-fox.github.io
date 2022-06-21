@@ -258,15 +258,12 @@ h2 {
     align-items: flex-end;
         /* width: 380px; */
   }
-/* 
-  .nav__lang {
-      display: flex;
-      transform: translate(200px, -300px) rotate(270deg);
-     
-      top: 50%;
-      right: 0;
-      z-index: 1;
-} */
+
+  @media (min-width: 768px) {
+    .bunner {
+        display: flex;
+    }
+  }
 
 .denis {
   display: flex;
@@ -296,6 +293,10 @@ h1:hover {
   cursor: pointer;
 }
 
+.lang_bunner {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .burger {
       display: none;
@@ -314,7 +315,23 @@ h1:hover {
   margin-top: 19px;
 }
 
-.den-img img{
+@media (min-width: 768px) {
+  .lang_bunner {
+    display: flex;
+    transform: translate(27px, -112px) rotate(270deg);
+  }
+
+.lang_bunner a {
+  font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    color: var(--color-font-secondary);
+    text-transform: uppercase;
+  }
+}
+
+.den-img img {
   margin-left: 21px;
   margin-top: 40.94px;
   margin-bottom: 83px;
@@ -502,6 +519,10 @@ span {
   margin-bottom: 83px;
 }
 
+.portfolio__list img {
+  max-width: 90%;
+}
+
 .portfolio a {
   font-family: var(--font-primary);
   font-weight: 500;
@@ -605,4 +626,13 @@ button {
   text-align: center;
   color: #828282;
   font-weight: 500;
+}
+
+
+@media (min-width: 1024px){
+  header {
+    padding: 0;
+    width: 941px;}
+    /* align-items: center; */
+
 }
